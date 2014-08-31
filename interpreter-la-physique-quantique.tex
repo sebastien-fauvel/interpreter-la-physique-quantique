@@ -1,5 +1,30 @@
-\documentclass[a4paper,10pt]{book}
+\documentclass[a4paper,10pt,twoside,openany]{book}
 \usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[frenchb]{babel}
+\usepackage[pdftex,pdfauthor=Sébastien\ Fauvel,pdftitle=Interpréter\ la\ Physique\ Quantique:\ Cours\ d'interprétation\ de\ la\ théorie\ quantique\ des\ champs]{hyperref}
+\usepackage[paperwidth=6in,paperheight=9in,top=19mm,bottom=10mm,outer=10mm,inner=14mm,pdftex]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{flafter}
+\usepackage{emptypage}
+\usepackage{etoolbox}
+\pagestyle{myheadings}
+\patchcmd{\chapter}{\thispagestyle{plain}}{\thispagestyle{myheadings}}{}{}
+\patchcmd{\part}{\thispagestyle{plain}}{\thispagestyle{empty}}{}{}
+\let\stdpart\part\renewcommand*\part{\cleardoublepage\stdpart}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\setlength{\parskip}{2pt}
+\usepackage[autolanguage]{numprint}
+\usepackage{epigraph}
+\usepackage{appendix}
+\usepackage{makeidx}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsbsy}
+\usepackage{mathbbol}
+\makeindex
 
 \begin{document}
 
