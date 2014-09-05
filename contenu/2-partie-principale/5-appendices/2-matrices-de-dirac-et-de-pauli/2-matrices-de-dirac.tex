@@ -1,1 +1,37 @@
 \section{Matrices de Dirac}
+
+De manière similaire,
+dans le but d'établir und équation d'onde du premier ordre décrivant la propagation libre d'un électron relativiste,
+Paul Dirac a été amené à introduire quatre automorphismes de $\H^4$,
+notés $\gamop 0$, $\gamop 1$, $\gamop 2$ et $\gamop 3$,
+dont la propriété essentielle est de vérifier les relations d'anticommutation suivantes:
+\begin{equation*}
+\left\{ \gamop \mu, \gamop \nu \right\} \eqdef \gamop \mu \gamop \nu + \gamop \nu \gamop \mu = 2 \stthh g \mu \nu \Id
+\end{equation*}
+Dans cette expression, vous aurez reconnu le tenseur de Minkowski,
+pour lequel nous choisissons dans ce cours la signature suivante:
+\begin{equation*}
+\stt g \eqdef diag(1,-1,-1,-1)
+\end{equation*}
+Ici encore, il existe une infinité de familles d'automorphismes vérifiant ces relations algébriques,
+le choix de l'une d'entre-elles en particulier n'ayant aucune influence sur les prédictions de la théorie.
+La famille de matrices suivantes, construites par blocs à l'aide des matrices de Pauli:
+$$
+\begin{array}{cc}
+\gammat 0 \eqdef \left(\begin{matrix} I_2 & 0 \\ 0 & -I_2 \end{matrix}\right) &
+\gammat 1 \eqdef \left(\begin{matrix} 0 & \sigmat 1 \\ -\sigmat 1 & 0 \end{matrix}\right)
+\end{array}
+$$
+$$
+\begin{array}{cc}
+\gammat 2 \eqdef \left(\begin{matrix} 0 & \sigmat 2 \\ -\sigmat 2 & 0 \end{matrix}\right) &
+\gammat 3 \eqdef \left(\begin{matrix} 0 & \sigmat 3 \\ -\sigmat 3 & 0 \end{matrix}\right)
+\end{array}
+$$
+représente canoniquement une famille d'automorphismes de $\H^4$ qui vérifie ces relations d'anticommutation.
+C'est pour cette convention que nous optons dans ce cours pour définir les matrices de Dirac.
+Nous serons également amenés à faire usage de la notation vectorielle condensée:
+\begin{equation*}
+\gamvec \eqdef \left(\begin{matrix}  \gammat 1 \\ \gammat 2 \\ \gammat 3 \end{matrix}\right)
+\end{equation*}
+pour exprimer le Hamiltonien d'interaction de l'électrodynamique quantique.
