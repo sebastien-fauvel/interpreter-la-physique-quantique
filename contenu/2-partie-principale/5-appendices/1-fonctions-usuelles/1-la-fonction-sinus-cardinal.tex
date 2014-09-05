@@ -1,1 +1,20 @@
 \section{La fonction sinus cardinal}
+
+Pour des raisons de simplicité,
+nous adopterons dans ce cours la convention suivante pour définir la fonction sinus cardinal:
+\begin{equation*}
+\sinc{X} \eqdef \begin{cases}
+1 & \text{en $X = 0$} \\
+\sin{( \pi X )} / ( \pi X ) & \text{pour $X \in \IR^*$}
+\end{cases}
+\end{equation*}
+Notez la présence du facteur $\pi$ qui est généralement absent des définitions usuelles.
+Nous rencontrerons cette fonction sous la forme intégrale suivante,
+où vous aurez reconnu une transformation de Fourier:
+\begin{equation*}
+\sinc{X} = \frac 1 X \int_{-X/2}^{X/2} \exp{\i 2 \pi x} \dx
+\end{equation*}
+Celle-ci est normalisée à l'unité par:
+\begin{equation*}
+\int_{-\infty}^{+\infty} \sinc{X} \dX = 1
+\end{equation*}
