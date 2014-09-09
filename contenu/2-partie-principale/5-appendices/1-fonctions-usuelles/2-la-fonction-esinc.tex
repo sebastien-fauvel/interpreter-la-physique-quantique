@@ -1,1 +1,23 @@
 \section{La fonction esinc}
+
+Plus encore que le sinus cardinal lui-même, défini plus haut à l'annexe \ref{sinc},
+c'est la fonction suivante qui nous sera utile lors des développements perturbatifs:
+\begin{equation*}
+\esinc{X} \eqdef \exp{\i \pi X} \sinc{X}
+\end{equation*}
+Nous la rencontrerons sous la forme intégrale suivante, où vous reconnaîtrez à nouveau une transformation de Fourier:
+\begin{equation*}
+\esinc{X} = \frac 1 X \int_0^X \exp{\i 2 \pi x} \dx
+\end{equation*}
+Vous pourrez vérifier que, pour tout $X \in \IR^*$, elle peut se mettre sous la forme canonique:
+\begin{equation*}
+\esinc{X} = \frac{\sin{2 \pi X}}{2 \pi X} + \i \frac{1 - \cos{2 \pi X}}{2 \pi X}
+\end{equation*}
+Vous en déduirez la propriété d'antisymétrie:
+\begin{equation*}
+\esinc{-X} = \cc{\esinc{X}}
+\end{equation*}
+ainsi que son intégrale:
+\begin{equation*}
+\int_{-\infty}^{+\infty} \esinc{X} \dX = \frac 1 2
+\end{equation*}
