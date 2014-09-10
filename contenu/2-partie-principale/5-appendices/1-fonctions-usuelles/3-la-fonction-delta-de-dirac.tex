@@ -1,1 +1,30 @@
 \section{La fonction $\delta$ de Dirac}
+\label{delta}
+
+Toujours dans le cadre de développements perturbatifs,
+nous rencontrerons deux familles de fonctions convergeant,
+lorsque $t - t_0 \to +\infty$,
+vers la distribution $\delta$ introduite par Paul Dirac dans ses
+\textit{Principes de la Mécanique Quantique}~\cite{Dirac1930}:
+\begin{eqnarray*}
+\deltaE1{E} & \eqdef & \frac{t - t_0} \h \sinc{\frac{t - t_0} \h E} \\
+\deltaE2{E} & \eqdef & \frac{t - t_0} \h \sinc{\frac{t - t_0} \h E}^2
+\end{eqnarray*}
+Ces fonctions sont exprimées ici à l'aide du sinus cardinal, défini plus haut à l'annexe \ref{sinc}.
+Notons au passage qu'elles sont liées par la relation:
+\begin{equation*}
+\deltaE1{E}^2 = \frac{t - t_0} \h \deltaE2{E}
+\end{equation*}
+
+Il peut être utile de rappeler que la convergence au sens des distributions signifie ici que,
+pour toute fonction continue $\phi$ à support compact (c'est-à-dire nulle en dehors d'un segment donné),
+nous avons:
+\begin{equation*}
+\lim_{t - t_0 \to +\infty} \int_{-\infty}^{+\infty} \deltaE1{E} {\phi(E)} \dE = \phi(0)
+\end{equation*}
+$\phi(0)$ étant par définition l'action de la distribution de Dirac sur $\phi$.
+Vous pourrez le démontrer aisément en utilisant la propriété de continuité de $\phi$ en 0,
+ce qui permet d'établir un encadrement de l'intégrale sur le domaine$\left[-\h/(t - t_0), \h/(t - t_0)\right]$
+lorsque $t - t_0$ est assez grand, et d'en calculer la limite,
+puis en prenant en compte le fait que $\phi$, en tant que fonction continue à support compact, soit bornée,
+ce qui permet de majorer l'intégrale sur le reste de son support.
